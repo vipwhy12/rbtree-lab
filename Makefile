@@ -11,6 +11,8 @@ build: ## Build executables
 test:
 test: ## Test rbtree implementation
 	$(MAKE) -C test test
+	$(MAKE) -C src clean
+	$(MAKE) -C test clean
 	
 clean:
 clean: ## Clear build environment
